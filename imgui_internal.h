@@ -1949,6 +1949,7 @@ struct ImGuiContext
     bool                    MultiSelectEnabled;
     ImGuiMultiSelectFlags   MultiSelectFlags;
     ImGuiMultiSelectState   MultiSelectState;                   // We currently don't support recursing/stacking multi-select
+    ImGuiKeyChord           MultiSelectKeyMods;
 
     // Render
     float                   DimBgRatio;                         // 0.0..1.0 animation when fading in a dimming background (for modal window and CTRL+TAB list)
@@ -2182,6 +2183,7 @@ struct ImGuiContext
 
         MultiSelectEnabled = false;
         MultiSelectFlags = ImGuiMultiSelectFlags_None;
+        MultiSelectKeyMods = ImGuiMod_None;
 
         DimBgRatio = 0.0f;
 
