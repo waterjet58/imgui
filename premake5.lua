@@ -23,7 +23,7 @@ project "imgui"
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
-		staticruntime "on"
+		staticruntime "off"
 
 	filter "system:linux"
 		pic "On"
